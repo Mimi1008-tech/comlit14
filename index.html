@@ -6,14 +6,115 @@
     <title>Comlit 14</title>
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./js/highlight/styles/github-dark-dimmed.min.css"
+    />
   </head>
   <body>
-    <h1>Heading H1</h1>
-    <h2>Heading H2</h2>
-    <h3>Heading H3</h3>
-    <h4>Heading H4</h4>
-    <h5>Heading H5</h5>
-    <h6>Heading H6</h6>
-    <p>Hello World. <a href="#">This is hyperlink</a></p>
+    <header class="header">
+      <nav class="navbar dark">
+        <div class="navbar-left">Hoge</div>
+        <div class="navbar-right">
+          <ul>
+            <li><a href="">Top</a></li>
+            <li><a href="">UEC Dashboard</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Heading H1</h1>
+      <h2>Heading H2</h2>
+      <h3>Heading H3</h3>
+      <h4>Heading H4</h4>
+      <h5>Heading H5</h5>
+      <h6>Heading H6</h6>
+      <p>Hello World. <a href="#">This is hyperlink</a></p>
+
+      <a class="card" href="#">
+        <div class="card-img">
+          <img src="" alt="" />
+        </div>
+        <div class="card-header">
+          <h4>Hogehoge</h4>
+        </div>
+        <div class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio modi
+          sequi, eaque, iure nisi maxime voluptatem facere ex recusandae
+          perspiciatis laudantium adipisci qui exercitationem quia sint laborum
+          nesciunt consectetur dicta!
+        </div>
+      </a>
+
+      <div class="alert alert-primary">hoge fuga piyo</div>
+      <div class="btn-list">
+        <div class="btn btn-primary">hoge</div>
+        <div class="btn btn-primary">hoge</div>
+      </div>
+      <div class="filename">custom.css</div>
+      <pre class="code"><code class="css">html{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('ここに画像のURLを入れる');
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+*{
+    color: #fff;
+    border-color: #fff !important;
+}
+
+#header, #main, #footer{
+    background-color: transparent;
+}
+
+#search #search_input{
+    border: none;
+    
+    transition: .3s ease-in-out background-color;
+}
+
+#search #search_input:focus-visible{
+    border: none;
+    background-color: rgba(200, 200, 200, .3) !important;
+}
+
+#search #search_icon{
+    color: #fff !important;
+}
+
+.app:hover{
+    background-color: rgba(200, 200, 200, .3) !important;
+}
+
+#other_files ul, #other_files ul li a{
+    border: none;
+}
+
+#other_files ul li a{
+    border-radius: 5px;
+}
+
+#other_files ul li a:hover{
+    background-color: rgba(200, 200, 200, .3) !important;
+}
+
+#openBtn{
+    display: none !important;
+}
+</code></pre>
+    </main>
+
+    <footer class="footer">
+      <div class="copyright">Copyright 2023 Mimi Tech</div>
+    </footer>
+
+    <script src="./js/highlight/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>

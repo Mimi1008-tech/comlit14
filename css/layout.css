@@ -238,7 +238,47 @@
   padding-right: 6rem;
 }
 
+/* container */
 .container {
+  display: block;
+
   width: 100%;
-  max-width: 1024px;
+  max-width: 1080px;
+
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+/* border-radius */
+.br-small {
+  border-radius: 0.5rem;
+}
+
+.br-normal {
+  border-radius: 1rem;
+}
+
+.br-big {
+  border-radius: 1.5rem;
+}
+
+/* background-color */
+.bg-primary {
+  background-color: var(--primary-bg-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-bg-color);
+}
+
+.bg-success {
+  background-color: var(--success-bg-color);
+}
+
+.bg-warning {
+  background-color: var(--warning-bg-color);
+}
+
+.bg-danger {
+  background-color: var(--danger-bg-color);
 }

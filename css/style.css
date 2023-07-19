@@ -12,13 +12,22 @@
 /* layout */
 @import url(./layout.css);
 
+/* component */
+@import url(./component.css);
+
+/* header */
+@import url(./header.css);
+
+/* footer */
+@import url(./footer.css);
+
 /* import "Noto Sans JP Font" */
 @font-face {
   font-family: "Noto Sans JP";
   src: url(../fonts/Noto_Sans_JP/NotoSansJP-VariableFont_wght.ttf);
 }
 
-* {
+*:not(.katex-display *, pre > code *, code *) {
   font-family: "Noto Sans JP";
   box-sizing: border-box;
 }

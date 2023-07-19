@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "HackGen";
+  src: url(../fonts/HackGen/HackGen35Console-Regular.ttf);
+}
+
+/* component.css */
+
+/* card */
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+
+  border: 1px solid #ddd;
+
+  margin: 1rem 0 1rem;
+  margin-right: 1rem;
+
+  border-radius: 0.5rem;
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  text-decoration: none;
+}
+
+.card * {
+  color: #000;
+}
+
+.card .card-img img {
+  width: 100%;
+  height: auto;
+  max-height: 1000px;
+
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+
+  margin: 0;
+}
+
+.card .card-header {
+  width: calc(100% - 2rem);
+  margin: 0 1rem;
+  padding: 1rem 0 0.25rem;
+
+  font-size: 1.5rem;
+
+  border-bottom: 1px solid #eee;
+}
+
+.card .card-text {
+  padding: 0.5rem 1rem 1rem;
+}
+
+/* alert */
+.alert {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.alert.alert-secondary {
+  background-color: var(--secondary-alert-bg-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-bg-color);
+  border-radius: 0.25rem;
+}
+
+.alert.alert-success {
+  background-color: var(--success-alert-bg-color);
+  color: var(--success-color);
+  border: 1px solid var(--success-bg-color);
+  border-radius: 0.25rem;
+}
+
+.alert.alert-danger {
+  background-color: var(--danger-alert-bg-color);
+  color: var(--danger-color);
+  border: 1px solid var(--danger-bg-color);
+  border-radius: 0.25rem;
+}
+
+.alert.alert-warning {
+  background-color: var(--warning-alert-bg-color);
+  color: var(--warning-color);
+  border: 1px solid var(--warning-bg-color);
+  border-radius: 0.25rem;
+}
+
+.alert.alert-primary {
+  background-color: var(--primary-alert-bg-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-bg-color);
+  border-radius: 0.25rem;
+}
+
+/* button */
+.btn {
+  display: inline-block;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-right: 0.5rem;
+
+  border: none;
+
+  border-radius: 0.25rem;
+
+  cursor: pointer;
+
+  transition: filter 0.3s ease-in-out;
+
+  font-size: 0.9rem;
+}
+
+a.btn {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-right: 0.5rem;
+
+  text-decoration: none;
+}
+
+.btn:hover {
+  filter: brightness(110%);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: var(--secondary-color);
+}
+
+.btn-success {
+  color: var(--success-color);
+  background-color: var(--success-bg-color);
+}
+
+.btn-warning {
+  color: var(--warning-color);
+  background-color: var(--warning-bg-color);
+}
+
+.btn-danger {
+  color: var(--danger-color);
+  background-color: var(--danger-bg-color);
+}
+
+/* image */
+img {
+  width: 100%;
+  height: auto;
+
+  margin: 1rem auto;
+
+  border-radius: 0.5rem;
+  border: 1px solid #eee;
+}
+
+/* code block */
+pre {
+  width: 100%;
+
+  margin: 1.5rem 0 1.5rem;
+
+  display: inline-block;
+  width: 100%;
+
+  padding: 0;
+
+  color: #fff;
+}
+
+pre > code {
+  border-radius: 0.25rem;
+}
+
+pre > code *,
+code {
+  font-family: "HackGen";
+}
+
+/* inline code block */
+:not(pre) > code {
+  background-color: #eee;
+  margin: 0 0.2rem;
+  padding: 0.15rem 0.25rem;
+  border-radius: 0.2rem;
+
+  color: #333;
+}
+
+blockquote > p {
+  padding-left: 1rem;
+
+  border-left: 2px solid #eee;
+}
+
+@media (max-width: 720px) {
+  .card {
+    width: 100%;
+
+    margin: 1rem auto 1rem;
+    margin-right: auto;
+  }
+}
