@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* custom-properties.css */
+/* カスタムプロパティの設定 */
+
+:root {
+  --primary-color: #198581;
+  --secondary-color: #555555;
+  --success-color: #12551e;
+  --warning-color: #dda10a;
+  --danger-color: #b91b1b;
+
+  --primary-bg-color: #5eb4b1;
+  --secondary-bg-color: #aaaaaa;
+  --success-bg-color: #78c386;
+  --warning-bg-color: #faef80;
+  --danger-bg-color: #e6a0a0;
+
+  --primary-alert-bg-color: #c4e2e1;
+  --secondary-alert-bg-color: #cbcbcb;
+  --success-alert-bg-color: #bbe4c3;
+  --warning-alert-bg-color: #eae7c5;
+  --danger-alert-bg-color: #dfbebe;
+}

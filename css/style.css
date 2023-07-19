@@ -1,7 +1,24 @@
 @charset "UTF-8";
 
-/* "Noto Sans JP Font" を読み込み */
+/* reset css */
+@import url(./the-new-css-reset/css/reset.css);
+
+/* custom properties */
+@import url(./custom-properties.css);
+
+/* text */
+@import url(./text.css);
+
+/* layout */
+@import url(./layout.css);
+
+/* import "Noto Sans JP Font" */
 @font-face {
-  font-family: Noto Sans JP;
+  font-family: "Noto Sans JP";
   src: url(../fonts/Noto_Sans_JP/NotoSansJP-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: "Noto Sans JP";
+  box-sizing: border-box;
 }

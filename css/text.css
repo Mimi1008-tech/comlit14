@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+/* text.css */
+
+/* heading, paragraph */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  width: 100%;
+
+  font-weight: normal;
+}
+
+h1 {
+  margin: 3rem 0 1rem;
+  padding: 1rem 0;
+
+  font-size: 2.5rem;
+
+  border-bottom: #eee solid 1px;
+}
+
+h2 {
+  margin: 3rem 0 0.5rem;
+
+  font-size: 2.25rem;
+}
+
+h3 {
+  margin: 2rem 0 0.25rem;
+
+  font-size: 2rem;
+}
+
+h4 {
+  margin: 0.25rem 0;
+
+  font-size: 1.75rem;
+}
+
+h5 {
+  margin: 0.1rem 0;
+
+  font-size: 1.5rem;
+}
+
+h6 {
+  margin: 0.1rem 0;
+
+  font-size: 1.25rem;
+}
+
+p {
+  margin: 0.5rem 0;
+
+  font-size: 1rem;
+}
+
+a {
+  font-size: 1rem;
+
+  color: #555;
+
+  text-decoration: underline;
+}
+
+/* font-size */
+.fs-xs {
+  font-size: 0.5rem;
+}
+
+.fs-s {
+  font-size: 0.75rem;
+}
+
+.fs-m {
+  font-size: 1rem;
+}
+
+.fs-l {
+  font-size: 1.25rem;
+}
+
+.fs-xl {
+  font-size: 1.5rem;
+}
+
+/* font-weight */
+.fw-1 {
+  font-weight: 100;
+}
+
+.fw-2 {
+  font-weight: 200;
+}
+
+.fw-3 {
+  font-weight: 300;
+}
+
+.fw-4 {
+  font-weight: 400;
+}
+
+.fw-5 {
+  font-weight: 500;
+}
+
+.fw-6 {
+  font-weight: 600;
+}
+
+.fw-7 {
+  font-weight: 700;
+}
+
+.fw-8 {
+  font-weight: 800;
+}
+
+.fw-9 {
+  font-weight: 900;
+}
+
+.fw-lighter {
+  font-weight: lighter;
+}
+
+.fw-normal {
+  font-weight: normal;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fw-bolder {
+  font-weight: bolder;
+}
+
+/* text-color */
+.tc-primary {
+  color: var(--primary-color);
+}
+
+.tc-secondary {
+  color: var(--secondary-color);
+}
+
+.tc-success {
+  color: var(--success-color);
+}
+
+.tc-warning {
+  color: var(--warning-color);
+}
+
+.tc-danger {
+  color: var(--danger-color);
+}
+
+/* text-position */
+.t-left {
+  text-align: left;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-right {
+  text-align: right;
+}
