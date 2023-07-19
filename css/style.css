@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/* "Noto Sans JP Font" を読み込み */
+@font-face {
+  font-family: Noto Sans JP;
+  src: url(../fonts/Noto_Sans_JP/NotoSansJP-VariableFont_wght.ttf);
+}
