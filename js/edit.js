@@ -5,6 +5,7 @@ $(function () {
   ) {
     $("#preview").html(localStorage.getItem("preview"));
     $("#editor").text(localStorage.getItem("draft"));
+    $("#article").val(localStorage.getItem("preview"));
   }
   hljs.highlightAll();
 
@@ -16,6 +17,7 @@ $(function () {
     localStorage.setItem("preview", html);
 
     $("#preview").html(html);
+    $("#article").val(html);
 
     hljs.highlightAll();
   });

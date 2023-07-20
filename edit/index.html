@@ -19,11 +19,27 @@
     <link rel="stylesheet" href="../css/edit.css" />
   </head>
   <body>
-    <div id="edit">
-      <textarea id="editor"></textarea>
-    </div>
-    <div id="preview" class="container"></div>
-    <div id="draft" style="display: none !important"></div>
+    <form
+      action="http://www.edu.cc.uec.ac.jp/~s2311108/comlit14/write/"
+      method="get"
+    >
+      <input type="text" name="user" id="" style="display: none" value="hoge" />
+      <div class="hoge" style="display: none" name="user"></div>
+      <div id="edit">
+        <textarea id="editor" name="article"></textarea>
+      </div>
+      <div id="preview" class="container"></div>
+      <input
+        type="text"
+        name="article"
+        id="article"
+        style="display: none"
+        value=""
+      />
+
+      <button type="submit">送信</button>
+    </form>
+
     <script src="../js/highlight/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked-katex-extension/lib/index.umd.js"></script>
