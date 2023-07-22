@@ -11,17 +11,17 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 220px;
+  width: 100%;
 
   border: 1px solid #ddd;
 
   margin: 1rem 0 1rem;
-  margin-right: 1rem;
+  padding: 1rem 0.5rem;
 
   border-radius: 0.5rem;
 
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   overflow: hidden;
 
@@ -32,30 +32,12 @@
   color: #000;
 }
 
-.card .card-img img {
-  width: 100%;
-  height: auto;
-  max-height: 1000px;
-
-  border-radius: 0;
-  box-shadow: none;
-  border: none;
-
-  margin: 0;
-}
-
 .card .card-header {
-  width: calc(100% - 2rem);
-  margin: 0 1rem;
-  padding: 1rem 0 0.25rem;
+  width: 100%;
 
   font-size: 1.5rem;
 
   border-bottom: 1px solid #eee;
-}
-
-.card .card-text {
-  padding: 0.5rem 1rem 1rem;
 }
 
 /* alert */

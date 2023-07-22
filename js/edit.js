@@ -3,8 +3,10 @@ $(function () {
     localStorage.getItem("preview") != null &&
     localStorage.getItem("draft") != null
   ) {
+    $("#user").val(localStorage.getItem("user"));
+    $("#title").val(localStorage.getItem("title"));
     $("#preview").html(localStorage.getItem("preview"));
-    $("#editor").text(localStorage.getItem("draft"));
+    $("#editor").val(localStorage.getItem("draft"));
     $("#article").val(localStorage.getItem("preview"));
   }
   hljs.highlightAll();
@@ -13,6 +15,8 @@ $(function () {
     marked.use(markedKatex({ throwOnError: false }));
     html = marked.parse(event.target.value);
 
+    localStorage.setItem("user", $("#user").val());
+    localStorage.setItem("title", $("#title").val());
     localStorage.setItem("draft", $("#editor").val());
     localStorage.setItem("preview", html);
 
