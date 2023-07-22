@@ -40,40 +40,25 @@ if ($statusCode === 200) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Comlit14</title>
-  
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./js/highlight/styles/github-dark-dimmed.min.css" />
-  <link rel="stylesheet" href="./css/toppage.css">
 </head>
+
 <body>
-  
+
   <?php insertHeader() ?>
 
   <main>
-    <section class="main-header">
-      <div class="header-phrase-parent">
-        <div class="header-phrase">
-          <p class="override">CROP</p>
-          <p class="override">YOURSELF</p>
-          <p><span class="br">コンピュータ</span><span class="br">リテラシ</span><span class="br">第14回</span><span class="br">総合課題</span></p>
-        </div>
-        <div class="header-button-parent">
-          <a class="header-button override" href="#articles">
-            <span>
-              記事を見る
-            </span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="container">
-      <h2 id="articles">最近の記事</h2>
+    <div class="container">
+      <h2>最近の記事</h2>
       <?php foreach ($contents as $content) : ?>
         <a class="card" href="./article/?id=<?php echo $content[0] ?>">
           <h4 class=" card-title">
@@ -86,7 +71,18 @@ if ($statusCode === 200) {
         </a>
 
       <?php endforeach; ?>
-    </section>
+    </div>
   </main>
+
+  <?php insertFooter() ?>
+
+  <script src="./js/highlight/highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked-katex-extension/lib/index.umd.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
 </body>
+
 </html>

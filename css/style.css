@@ -27,7 +27,7 @@
   src: url(../fonts/Noto_Sans_JP/NotoSansJP-VariableFont_wght.ttf);
 }
 
-*:not(.katex-display *, pre > code *, code *) {
+*:not(.katex-display *, pre > code *, code *, .override *) {
   font-family: "Noto Sans JP";
   box-sizing: border-box;
 }
