@@ -8,8 +8,6 @@ define('DATA_DATE', 4);
 
 define('GAS_DB_ID', 'AKfycbz0bs2jOGsg4rPs2Wh0F1mDs97DlRUeqFnXljW5h09yOqKgv5OJ47kK3SrDQs95CNT8_w');
 
-define('STUDENT_NUM', 'a2311008');
-
 function documentRoot(){
     if(!isset($_SERVER["SCRIPT_NAME"]) || !isset($_SERVER["SCRIPT_FILENAME"])){
       return false;
@@ -32,10 +30,10 @@ function documentRoot(){
 
 function insertHeader()
 {
-    include(sprintf("%s/comlit14/template/header.template.php", documentRoot(), STUDENT_NUM));
+    include(sprintf("%s/comlit14/template/header.template.php", documentRoot()));
 }
 
 function insertFooter()
 {
-    include(sprintf("%s/comlit14/template/footer.template.php", documentRoot(), STUDENT_NUM));
+    include(sprintf("%s/comlit14/template/footer.template.php", documentRoot()));
 }
