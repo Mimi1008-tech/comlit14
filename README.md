@@ -1,5 +1,9 @@
 # comlit14
 
+## 公開先
+
+http://www.edu.cc.uec.ac.jp/~a2311008/comlit14/
+
 ## 共同作業者
 
 - 2311008 東 翔生
