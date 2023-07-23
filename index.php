@@ -88,5 +88,7 @@ if ($statusCode === 200) {
       <?php endforeach; ?>
     </section>
   </main>
+  
+  <?php insertFooter() ?>
 </body>
 </html>

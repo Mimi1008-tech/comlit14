@@ -11,10 +11,10 @@ define('GAS_DB_ID', 'AKfycbz0bs2jOGsg4rPs2Wh0F1mDs97DlRUeqFnXljW5h09yOqKgv5OJ47k
 
 function insertHeader()
 {
-    include("/home0/y2023/s2311108/public_html/comlit14/template/header.template.php");
+    include("./template/header.template.php");
 }
 
 function insertFooter()
 {
-    include("/home0/y2023/s2311108/public_html/comlit14/template/footer.template.php");
+    include("./template/footer.template.php");
 }
