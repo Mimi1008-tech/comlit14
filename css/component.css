@@ -172,6 +172,7 @@ pre > code {
 }
 
 pre > code *,
+pre > code,
 code {
   font-family: "HackGen";
 }
